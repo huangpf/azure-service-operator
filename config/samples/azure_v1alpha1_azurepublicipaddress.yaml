@@ -1,0 +1,10 @@
+apiVersion: azure.microsoft.com/v1alpha1
+kind: AzurePublicIPAddress
+metadata:
+  name: azurepublicipaddress-sample
+spec:
+  location: westus
+  resourceGroup: resourcegroup-azure-operators
+  publicIPAllocationMethod: "Static"
+  idleTimeoutInMinutes: 10
+  publicIPAddressVersion: "IPv4"

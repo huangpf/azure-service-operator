@@ -592,6 +592,13 @@ func main() {
 		setupLog.Error(err, "unable to create controller", "controller", "MySQLFirewallRule")
 		os.Exit(1)
 	}
+	if err = (&controllers.AzurePublicIPAddressReconciler{
+		Client: mgr.GetClient(),
+		Log:    ctrl.Log.WithName("controllers").WithName("AzurePublicIPAddress"),
+	}).SetupWithManager(mgr); err != nil {
+		setupLog.Error(err, "unable to create controller", "controller", "AzurePublicIPAddress")
+		os.Exit(1)
+	}
 	// +kubebuilder:scaffold:builder
 
 	setupLog.Info("starting manager")

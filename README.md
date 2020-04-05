@@ -41,6 +41,7 @@ This project maintains [releases of the Azure Service Operator](https://github.c
 10.[Application Insights](/docs/appinsights/appinsights.md)
 11.[API Management](/docs/apimgmt/apimgmt.md)
 12.[Cosmos DB](/docs/cosmosdb/cosmosdb.md)
+13.[TBD]
 
 For more information on deploying, troubleshooting & deleting resources, refer to [this](/docs/customresource.md) link
 
